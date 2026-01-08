@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orion Store</title>
+  <style>
+    /* Reset rápido */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0d1117; /* fondo oscuro elegante */
+      color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(-20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    img {
+      width: 180px;
+      margin-bottom: 20px;
+      /* efecto de retro-iluminación verde */
+      filter: drop-shadow(0 0 10px #00ff88) drop-shadow(0 0 20px #00ff88);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {filter: drop-shadow(0 0 10px #00ff88) drop-shadow(0 0 20px #00ff88);}
+      50% {filter: drop-shadow(0 0 20px #00ff88) drop-shadow(0 0 30px #00ff88);}
+      100% {filter: drop-shadow(0 0 10px #00ff88) drop-shadow(0 0 20px #00ff88);}
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      color: #1e90ff;
+      text-shadow: 0 0 10px #1e90ff, 0 0 20px #1e90ff;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #25d366; /* verde WhatsApp */
+      color: white;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #25d366;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #128c4a;
+      box-shadow: 0 0 20px #25d366;
+    }
+  </style>
+</head>
+<body>
+  <style>
+  .imagen-redonda {
+    width: 150px;           /* Ancho fijo */
+    height: 150px;          /* Alto igual al ancho */
+    border-radius: 50%;     /* Hace la imagen circular */
+    object-fit: cover;      /* Ajusta la imagen sin deformarla */
+    border: 3px solid #333; /* Borde opcional */
+  }
+ </style>	
+  <div class="container">
+    <!-- Logo robot gatita -->
+    <img src="robot_gatita.jpeg" alt="Logo Orion Store" class="imagen-redonda">
+
+    <h1>Orion Store</h1>
+    <p>Estamos preparando algo increíble 🚀<br>¡Pronto podrás comprar tecnología y accesorios en Honduras!</p>
+
+    <!-- Botón WhatsApp temporal -->
+    <a class="whatsapp-btn" href="https://wa.me/50488752814" target="_blank">Contáctanos por WhatsApp</a>
+  </div>
+</body>
+</html>
